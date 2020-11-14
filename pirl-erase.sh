@@ -30,3 +30,4 @@ sudo rm -f /etc/systemd/system/pirlnode.service
 sleep 2
 echo "Reloading SystemD"
 sudo systemctl daemon-reload
+rm pirl-erase.sh
