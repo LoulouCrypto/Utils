@@ -16,7 +16,7 @@ sudo rm -r .pirl .marlin mn_installer
 sleep 2
 sudo rm -r /root/.pirl
 sleep 2
-sudo rm -r /root/marlin
+sudo rm -r /root/.marlin
 sleep 2
 sudo rm /usr/bin/pirl
 sleep 2
