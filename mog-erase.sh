@@ -9,7 +9,7 @@ sleep 2
 systemctl disable MOGWAI
 sleep 2
 echo "Erasing Files"
-rm -r mogwai*
+rm -r .mogwai* mogwai* 
 sleep 2
 rm /usr/local/bin/mogwai*
 sleep 2
