@@ -7,7 +7,8 @@ sudo systemctl stop zend.service
 sleep 2
 sudo systemctl stop zentracker.service
 sleep 2
-killall zen*
+sudo killall zend
+sudo killall zen*
 sleep 2
 sudo systemctl disable zend.service
 sleep 2
