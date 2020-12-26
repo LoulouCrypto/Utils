@@ -7,4 +7,5 @@ Allow outgoing Ufw
 bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/firewall.sh)
 
 Erase Zennode
+
 bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/zen-erase.sh)
