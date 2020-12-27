@@ -9,3 +9,8 @@ bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/fire
 Erase Zennode
 
 bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/zen-erase.sh)
+
+Erase Ssx Node
+
+bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/ssx-erase.sh)
+
