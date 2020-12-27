@@ -6,7 +6,7 @@ read -e SSX_USER
 cd ~
 sleep 2
 echo -e "stoping node"
-ssx$SSX_USER stop
+ssx_mn$SSX_USER stop
 sleep 2
 systemctl disable ssx$SSX_USER
 echo -e "Removing Node ssx_mn$SSX_USER"
@@ -19,4 +19,4 @@ rm /etc/systemd/system/ssx_mn$SSX_USER.service
 sleep 2 
 systemctl daemon-reload
 sleep 2 
-Echo -e "ssx Mn $SSX_USER removed"
+echo -e "ssx Mn $SSX_USER removed"
