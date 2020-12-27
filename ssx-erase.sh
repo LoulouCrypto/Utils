@@ -8,7 +8,7 @@ sleep 2
 echo -e "stoping node"
 ssx_mn$SSX_USER stop
 sleep 2
-systemctl disable ssx$SSX_USER
+systemctl disable ssx_mn$SSX_USER
 echo -e "Removing Node ssx_mn$SSX_USER"
 sleep 2
 userdel ssx_mn$SSX_USER
