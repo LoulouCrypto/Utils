@@ -1,6 +1,7 @@
 #!/bin/bash
 # Script done by LoulouCrypto
 # https://www.louloucrypto.fr
+ls /home/
 echo -e "Witch SSX nodes would you want to Del on this server ? ( just the number )"
 read -e SSX_USER
 cd ~
