@@ -14,6 +14,6 @@ Erase Ssx Node
 
 bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/ssx-erase.sh)
 
-Erase Ssx Node
+Bootstrap Esbc Node
 
 bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/esbc-bootstrap.sh)
