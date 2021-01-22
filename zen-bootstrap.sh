@@ -13,3 +13,5 @@ sleep 2
 tar xzf horizen_masternode_blockchain_2021-01-22_10-00-02_UTC.tar.gz
 sleep 2
 rm horizen_masternode_blockchain_2021-01-22_10-00-02_UTC.tar.gz
+sleep 2
+zend -rescan
