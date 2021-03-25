@@ -5,7 +5,7 @@
   echo -e "Updating System"
 apt-get update 
 apt-get upgrade -y 
- apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" curl systemd figlet nano whiptail htop ufw net-tools unzip tar
+ apt-get install -y curl systemd figlet nano whiptail htop ufw net-tools unzip tar
   clear
   figlet -f slant "MnSf"
   echo -e "Enter the User"
