@@ -3,9 +3,9 @@
 # https://www.louloucrypto.fr
 
   echo -e "Updating System"
-apt-get update > /dev/null 2>&1
-apt-get upgrade -y > /dev/null 2>&1
- apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" curl systemd figlet nano whiptail htop ufw net-tools unzip tar >/dev/null 2>&1
+apt-get update 
+apt-get upgrade -y 
+ apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" curl systemd figlet nano whiptail htop ufw net-tools unzip tar
   clear
   figlet -f slant "MnSf"
   echo -e "Enter the User"
