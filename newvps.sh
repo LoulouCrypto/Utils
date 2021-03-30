@@ -6,7 +6,7 @@
 apt-get update 
 apt-get upgrade -y 
 sleep 2
- apt-get install -y curl systemd figlet nano whiptail htop ufw net-tools unzip tar net-tools
+ apt-get install -y curl systemd figlet nano whiptail htop ufw net-tools unzip tar net-tools e2fsprogs
   clear
   figlet -f slant "MnSf"
   echo -e "Enter the User"
