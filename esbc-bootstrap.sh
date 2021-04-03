@@ -7,7 +7,7 @@ cd .esbcoin
 sleep 1
 esbcoin-cli stop
 sleep 2
-rm -r blocks chainstate how-to-use.txt macOS_update.sh
+rm -r blocks chainstate database how-to-use.txt macOS_update.sh db.log debug.log peers.dat
 sleep 2 
 wget https://files.esbc.pro/bootstrap.zip
 sleep 1 
