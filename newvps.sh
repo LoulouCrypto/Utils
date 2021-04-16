@@ -20,6 +20,7 @@ sleep 2
   figlet -f slant "MnSf"
   echo -e "Preparing the Vps"
   cd ~
+  enable_ipv6
   sleep 1
   echo -e "Adding Fw Rules"
   ufw allow 2714
