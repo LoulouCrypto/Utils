@@ -26,6 +26,7 @@ sleep 2
   ufw allow 2714
   ufw allow 12474
   sudo ufw allow 16125
+  sudo ufw allow 10050
   sudo ufw allow from any to any port 12474 
   sudo ufw allow out to any port 12474
   sudo ufw allow from any to any port 16127 
