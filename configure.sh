@@ -2,6 +2,7 @@
 # Script done by LoulouCrypto
 # https://www.louloucrypto.fr
 
+if [[ $USER == *root* ]]; then
 echo -e "Updating System"
 sleep 2
 apt-get update
@@ -45,3 +46,19 @@ sleep 1
 free -h
 sleep 1 
 ifconfig
+sleep 10
+nano /etc/netplan/01-netcfg.yaml
+
+elif [[ $USER == *fdr* ]]; then
+ cd
+ sleep 1
+ wget zang.ovh/daemons.zip
+ sleep 1 
+ unzip daemons.zip 
+ sleep 1 
+ rm daemons.zip
+ 
+else
+   echo -e "Check the user"
+   exit 1
+fi
