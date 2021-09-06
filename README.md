@@ -21,3 +21,7 @@ bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/ssx-
 Bootstrap Esbc Node
 
 bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/esbc-bootstrap.sh)
+
+Bootstrap Nrg
+
+bash -i <(curl -s https://raw.githubusercontent.com/LoulouCrypto/Utils/main/bootstrap-nrg.sh)
