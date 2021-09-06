@@ -1,3 +1,5 @@
+cd
+sleep 1
 rm preimages.rlp
 sleep 1
 wget https://s3-us-west-2.amazonaws.com/download.energi.software/releases/chaindata/mainnet/preimages.rlp
