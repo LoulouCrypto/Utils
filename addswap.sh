@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script by LoulouCrypto
 # https://www.louloucrypto.fr
- echo -e "${RED}How many running Go of swap do you want to add on this server ? ( add M after the number)"
+ echo -e "${RED}How many running Go of swap do you want to add on this server ? ( add G after the number)"
  read -e SWAP
 sudo fallocate -l $SWAP /swap2G.file
 sleep 1
