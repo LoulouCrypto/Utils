@@ -11,6 +11,9 @@ sleep 2
   figlet -f slant "MnSf"
   echo -e "Enter the User"
   read -e NEWUSER
+  sleep 1 
+  echo -e "Enter swap in Gbytes ex : 5G or 20G"
+  read -e SWAP
   sleep 1
   adduser $NEWUSER
   sleep 1
@@ -20,6 +23,24 @@ sleep 2
   figlet -f slant "MnSf"
   echo -e "Preparing the Vps"
   cd ~
+  echo -e "Adding Swap"
+  sleep 2
+sudo fallocate -l $SWAP /swap_$SWAP.file
+sleep 1
+sudo chmod 600 /swap_$SWAP.file
+sleep 1
+sudo mkswap /swap_$SWAP.file
+sleep 1
+sudo swapon /swap_$SWAP.file
+sleep 1 
+echo '/swap_$SWAP.file none swap sw 0 0' | sudo tee -a /etc/fstab
+sleep 1 
+echo -e "Swap added : "
+free -h
+sleep 5
+clear
+  figlet -f slant "MnSf"
+  echo -e "Configuring Ipv6 and Firewall: "
   enable_ipv6
   sleep 1
   echo -e "Adding Fw Rules"
@@ -35,8 +56,11 @@ sleep 2
   sudo ufw reload
   sudo ufw default allow outgoing
   sudo ufw default deny incoming
-  sleep 5
+  clear
+  figlet -f slant "MnSf"
+  sleep 1
   echo -e "Now Edit the sshd Config"
+  Sleep 5
   nano /etc/ssh/sshd_config
   
   
