@@ -60,7 +60,7 @@ clear
   figlet -f slant "MnSf"
   sleep 1
   echo -e "Now Edit the sshd Config"
-  Sleep 5
+  sleep 5
   nano /etc/ssh/sshd_config
   
   
