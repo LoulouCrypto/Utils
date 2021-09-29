@@ -18,6 +18,12 @@ apt-get install -y librsvg2-bin libtiff-tools bsdmainutils cmake imagemagick lib
 sleep 1
 apt-get install -y g++-aarch64-linux-gnu binutils-aarch64-linux-gnu g++-arm-linux-gnueabihf binutils-arm-linux-gnueabihf g++-4.8-multilib gcc-4.8-multilib binutils-gold bsdmainutils g++-aarch64-linux-gnu binutils-aarch64-linux-gnu g++-aarch64-linux-gnu 
 sleep 1 
+sudo add-apt-repository -y ppa:bitcoin/bitcoin
+sleep 1
+sudo apt-get update
+sleep 1
+sudo apt-get -y install libdb4.8-dev libdb4.8++-dev libminiupnpc-dev libzmq3-dev
+sleep 1
 clear
 echo -e "Configuring System"
 enable_ipv6 
