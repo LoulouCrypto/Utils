@@ -22,6 +22,7 @@ sleep 1
 unzip altecoin_ubuntu18_v1.1.zip
 sleep 1
 rm altecoin_ubuntu18_v1.1.zip
+rm altecoin-qt
 chmod +x altecoin*
 echo -e "${GREEN}Lunching $NBR_NODES ALTC Nodes ${NC}"
 sleep 1
