@@ -46,13 +46,15 @@ clear
   echo -e "Adding Fw Rules"
   ufw allow 2714
   ufw allow 12474
-  sudo ufw allow 16125
-  sudo ufw allow 10050
-  sudo ufw allow 33001
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw allow 16124:16128/tcp
+sudo ufw allow 16124:16128/udp
+sudo ufw allow 30000:39999/tcp
+sudo ufw allow 30000:39999/udp
+sudo ufw allow 10050
   sudo ufw allow from any to any port 12474 
   sudo ufw allow out to any port 12474
-  sudo ufw allow from any to any port 16127 
-  sudo ufw allow out to any port 16127
   sudo ufw reload
   sudo ufw default allow outgoing
   sudo ufw default deny incoming
