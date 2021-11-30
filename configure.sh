@@ -63,8 +63,10 @@ elif [[ $USER == *fdr* ]]; then
  unzip daemons.zip 
  sleep 1 
  rm daemons.zip
+ sleep 1
  chmod -R 764 daemons
- 
+ sleep 1
+ chmod +x install_node.sh
 else
    echo -e "Check the user"
    exit 1
