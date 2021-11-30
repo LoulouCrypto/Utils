@@ -63,6 +63,7 @@ elif [[ $USER == *fdr* ]]; then
  unzip daemons.zip 
  sleep 1 
  rm daemons.zip
+ chmod -R 764 daemons
  
 else
    echo -e "Check the user"
