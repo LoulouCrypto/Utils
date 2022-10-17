@@ -58,7 +58,7 @@ nano /etc/netplan/01-netcfg.yaml
 elif [[ $USER == *fdr* ]]; then
  cd
  sleep 1
- wget ftp://zang.ovh/daemons.zip
+ wget https://downloads.fdreserve.com/bootstraps/fymnn/daemons.zip
  sleep 1 
  unzip daemons.zip 
  sleep 1 
