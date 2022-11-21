@@ -3,18 +3,6 @@
 # https://www.louloucrypto.fr
 echo -e "Lunching Radeon Power Optimisations at startup"
 
-sleep 1
-
-cat >/usr/local/bin/conso.sh<<'EOF'
-/hive/bin/motd | grep Radeon | awk -F "[ ]"  '{print "echo 0 > /sys/bus/pci/devices/0000:"$3 "/pp_dpm_mclk"  }'| bash;
-EOF
-
-sleep 1
-
-chmod +x /usr/local/bin/conso.sh
-
-sleep 1 
-
 cat >/etc/systemd/system/amdconsotweak.service<<'EOF'
 [Unit]
 Description=Start amdconsotweak on boot
@@ -22,7 +10,7 @@ StartLimitIntervalSec=0
 
 [Service]
 Type=idle
-ExecStart=bash /usr/local/bin/conso.sh
+ExecStart=/hive/bin/motd | grep Radeon | awk -F "[ ]"  '{print "echo 0 > /sys/bus/pci/devices/0000:"$3 "/pp_dpm_mclk"  }'| bash;
 
 [Install]
 WantedBy=multi-user.target
