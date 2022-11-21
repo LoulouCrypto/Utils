@@ -2,7 +2,7 @@
 #!/bin/bash
 # Script done by LoulouCrypto
 # https://www.louloucrypto.fr
-echo -e "Lunching Radeon Power Optimisations at startup"
+echo -e "Launching Radeon Power Optimisations at startup"
 
 sleep 1
 
@@ -38,3 +38,4 @@ systemctl enable amdconsotweak.service
 sleep 1
 systemctl start amdconsotweak.service
 sleep 1
+echo -e "Radeon Power Optimisations Done"
