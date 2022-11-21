@@ -26,6 +26,7 @@ StartLimitIntervalSec=0
 [Service]
 Type=idle
 User=root
+ExecStartPre=/bin/sleep 60
 ExecStart=/usr/local/bin/conso.sh
 [Install]
 WantedBy=multi-user.target
