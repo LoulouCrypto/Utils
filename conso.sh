@@ -10,7 +10,7 @@ cat >/usr/local/bin/conso.sh<<'EOF'
 #!/bin/bash
 # Script done by LoulouCrypto
 # https://www.louloucrypto.fr
-/hive/bin/motd | grep Radeon | awk -F "[ ]"  '{print "echo 0 > /sys/bus/pci/devices/0000:"$3 "/pp_dpm_mclk"  }'| bash;
+/hive/bin/./motd | grep Radeon | awk -F "[ ]"  '{print "echo 0 > /sys/bus/pci/devices/0000:"$3 "/pp_dpm_mclk"  }'| bash;
 EOF
 
 sleep 1
@@ -25,7 +25,8 @@ Description=Start amdconsotweak on boot
 StartLimitIntervalSec=0
 [Service]
 Type=idle
-ExecStart=bash /usr/local/bin/conso.sh
+User=root
+ExecStart=/usr/local/bin/conso.sh
 [Install]
 WantedBy=multi-user.target
 EOF
