@@ -22,7 +22,7 @@ StartLimitIntervalSec=0
 
 [Service]
 Type=idle
-ExecStart=/usr/local/bin/conso.sh
+ExecStart=bash /usr/local/bin/conso.sh
 
 [Install]
 WantedBy=multi-user.target
