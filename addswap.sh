@@ -12,14 +12,17 @@ if ! [[ $SWAP =~ ^[0-9]+G$ ]]; then
   exit 1
 fi
 
+# Prépare le nom de fichier sans l'unité 'G'
+SWAP_FILE_NAME="swap_${SWAP%G}.file" # Supprime 'G' pour le nom de fichier
+
 # Création du fichier swap
-sudo fallocate -l $SWAP /swap_$SWAP.file
-sudo chmod 600 /swap_$SWAP.file
-sudo mkswap /swap_$SWAP.file
-sudo swapon /swap_$SWAP.file
+sudo fallocate -l $SWAP /$SWAP_FILE_NAME
+sudo chmod 600 /$SWAP_FILE_NAME
+sudo mkswap /$SWAP_FILE_NAME
+sudo swapon /$SWAP_FILE_NAME
 
 # Ajoute l'entrée swap dans fstab
-echo "/swap_$SWAP.file none swap sw 0 0" | sudo tee -a /etc/fstab
+echo "/$SWAP_FILE_NAME none swap sw 0 0" | sudo tee -a /etc/fstab
 
 # Affiche l'espace de swap actuel
 free -h
